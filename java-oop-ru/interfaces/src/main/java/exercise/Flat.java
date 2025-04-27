@@ -34,5 +34,6 @@ public class Flat implements Home {
         } else {
             return 0;
         }
+    }
 }
 // END
