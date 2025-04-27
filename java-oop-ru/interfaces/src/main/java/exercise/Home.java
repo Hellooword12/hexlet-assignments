@@ -1,8 +1,12 @@
 package exercise;
 
 // BEGIN
-public interface Home {
+public interface Home extends Comparable<Home> {
     double getArea();
-    double compareTo();
+
+    @Override
+    default int compareTo(Home another) {
+        return Double.compare(this.getArea(), another.getArea());
+    }
 }
 // END

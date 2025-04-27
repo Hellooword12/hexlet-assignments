@@ -19,19 +19,5 @@ public class Cottage implements Home {
     public String toString() {
         return String.format("%d этажный коттедж площадью %.1f метров", floorCount, area);
     }
-
-    @Override
-    public int compareTo(Home another) {
-        double thisArea = this.getArea();
-        double anotherArea = another.getArea();
-
-        if (thisArea > anotherArea) {
-            return 1;
-        } else if (thisArea < anotherArea) {
-            return -1;
-        } else {
-            return 0;
-        }
-    }
 }
 // END
