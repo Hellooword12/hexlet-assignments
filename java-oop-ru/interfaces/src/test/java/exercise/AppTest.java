@@ -45,7 +45,6 @@ import java.util.List;
 
             List<String> result = App.buildApartmentsList(apartments, 4);
             assertThat(result).isEqualTo(expected);
-
         }
 
         @Test
@@ -55,6 +54,6 @@ import java.util.List;
             List<String> result = App.buildApartmentsList(apartments, 10);
             assertThat(result).isEqualTo(expected);
         }
-
-        // END
+    }
+    // END
 }
